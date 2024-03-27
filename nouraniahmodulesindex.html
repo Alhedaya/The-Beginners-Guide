@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nouraniah Course - Online Quran tutor - تعليم القرآن اونلاين</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta name="Learn Quran Online" content="Arabic Lessons">
+<meta name="learning quran" content="online quran teacher">
+<style>
+body{background: #D1E4C4}
+
+.tooltips{
+ position: relative; display: inline-block; text-align:center; font-size:40px;}
+
+.tooltips .tooltipstext{ position: absolute; visibility: hidden; z-index: 1; left:23%; top: 100%; background: #F1F7ED; width:600px; border-radius: 4px; padding:10px; font-weight: normal; font-size:25px; text-align: center;}
+
+.tooltips:hover .tooltipstext{visibility: visible;}
+
+.container{
+
+ display:grid;
+ height: 100vh;
+ grid-template-columns: 1fr 1fr ;
+ grid-template-rows: .2fr 1.5fr 1.2fr .8fr;
+ grid-template-areas: "nav nav " " sidebar  main" 
+                      "content1 content2";
+ grid-gap:0.2rem;
+}
+nav{ grid-area: nav; display:grid;}
+main{ grid-area: main; display:grid;}
+#sidebar{ grid-area: sidebar; display:grid;}
+#content1{ grid-area: content1; display:grid;}
+#content2{ grid-area: content2; display:grid;}
+#content3{background: lightpink; grid-area: content3;}
+footer{background: lightblue; grid-area: footer;}
+
+@media only screen and (max-width: 750px){
+
+.tooltips{
+ position: relative;
+ display:none;
+}
+.tooltips .tooltipstext{
+ display: none;
+ position:absolute;
+ z-index: 1;
+ left:0%;
+ bottom:100%;
+ border-radius: 4px;
+ background:#F1F7ED;
+ box-shadow: 5px 0px 7px black;
+ width:530px;
+ text-align: center;
+}
+.tooltips:hover .tooltipstext{ display: none;}
+
+
+ .container{
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+   grid-template-areas: "nav" "sidebar" "main" 
+                      "content1" "content2" "content3"
+                      "footer";
+ }
+}
+</style>
+<body>
+
+<div class="container">
+
+ <nav><h1 class="tooltips">Nouraniah Modules Index <span class="tooltipstext"> Below is a comprehensive index of our course modules to help you navigate through the content easily.</span></h1></nav>
+
+ <main><h2 style="text-align:center;">Module 2: Nouraniah Rules</h2>
+
+<p style="font-size:20px;"><b>N</b>ouraniah Rules: Tanween and Sukoon</p>
+<ul style="font-size:20px;"> 
+ <li>Explanation of Tanween and Sukoon rules.</li>
+ <li>Practice exercises for applying Tanween and Sukoon rules.</li>
+</ul>
+<p style="font-size:20px;"><b>N</b>ouraniah Rules: Arabic Letter Joining Mastery</p>
+<ul style="font-size:20px;"> 
+ <li>Explanation of Arabic joining letter rules.</li>
+ <li>Practice exercises for Letter connection rules.</li>
+</ul></main>
+
+ <div id="sidebar"><h2 style="text-align:center;">Module 1: Introduction to Arabic Alphabet</h2>
+
+<p style="font-size:20px;"><b>I</b>ntroduction to Arabic Alphabet</p>
+<ul style="font-size:20px;"> 
+ <li>Overview of Arabic alphabet letters and their sounds.</li>
+ <li>Practice exercises for letter recognition and pronunciation.</li>
+</ul>
+<p style="font-size:20px;"><b>A</b>rabic Vowel Marks </p>
+<ul style="font-size:20px;"> 
+ <li>Explanation of Arabic vowel marks and their pronunciation.</li>
+ <li>Practice exercises for reading words with vowel marks.</li>
+</ul></div>
+
+ <div id="content1"><h2 style="text-align:center;">Module 3: Advanced Nouraniah Concepts</h2>
+
+<p style="font-size:20px;"><b>N</b>ouraniah Advanced Rules: Shaddah and Madd </p>
+<ul style="font-size:20px;"> 
+ <li>Explanation of Shadda and Madd rules.</li>
+ <li>Practice exercises for applying Shadda and Madd rules.</li>
+</ul>
+
+<p style="font-size:20px;"><b>N</b>ouraniah Advanced Rules: Sun and Moon Letters</p>
+<ul style="font-size:20px;"> 
+ <li>Explanation of Sun and Moon rules.</li>
+ <li>Practice exercises for applying Sun and Moon rules.</li>
+</ul></div>
+
+ <div id="content2"><h2 style="text-align:center;">Module 4: Review and Assessment</h2>
+
+<p style="font-size:20px;"><b>R</b>eview of Nouraniah Rules and Concepts</p>
+<ul style="font-size:20px;"> 
+ <li>Recap of key Nouraniah rules and concepts covered in the course.</li>
+ <li>Practice exercises for reinforcement.</li>
+</ul>
+<p style="font-size:20px;"><b>F</b>inal Assessment</p>
+<ul style="font-size:20px;"> 
+ <li>Assessment to evaluate proficiency in Nouraniah reading and pronunciation.</li>
+ <li>Practice on areas that needs improvement.</li>
+</ul></div>
+
+ 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nouraniah Course - Online Quran tutor - تعليم القرآن اونلاين</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta name="Learn Quran Online" content="Arabic Lessons">
+<meta name="learning quran" content="online quran teacher">
+<style>
+body{background: #D1E4C4;}
+
+.tooltips{
+ position: relative;
+ display:inline-block;
+}
+.tooltips .tooltipstext{
+ visibility: hidden;
+ position:absolute;
+ z-index: 1;
+ left:0%;
+ bottom:100%;
+ border-radius: 4px;
+ background:#F1F7ED;
+ box-shadow: 5px 0px 7px black;
+ width:530px;
+ text-align: center;
+}
+.tooltips:hover .tooltipstext{ visibility: visible;}
+
+.container{
+
+ display:grid;
+ height: 100vh;
+ grid-template-columns: 1fr 1fr ;
+ grid-template-rows: .2fr 1.5fr 1.2fr .8fr;
+ grid-template-areas: "nav nav " " sidebar  main";
+ grid-gap:0.2rem;
+}
+nav{ grid-area: nav;}
+main{ grid-area: main; display:grid}
+#sidebar{ grid-area: sidebar; display:grid}
+#content1{background: lightblue; grid-area: content1;}
+#content2{background: lightblue; grid-area: content2;}
+#content3{background: lightpink; grid-area: content3;}
+footer{background: lightblue; grid-area: footer;}
+
+@media only screen and (max-width: 550px){
+
+.tooltips{
+ position: relative;
+ display:inline-block;
+}
+.tooltips .tooltipstext{
+ display: none;
+ position:absolute;
+ z-index: 1;
+ left:0%;
+ bottom:100%;
+ border-radius: 4px;
+ background:#F1F7ED;
+ box-shadow: 5px 0px 7px black;
+ width:530px;
+ text-align: center;
+}
+.tooltips:hover .tooltipstext{ display: none;}
+
+ .container{
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+   grid-template-areas: "nav" "sidebar" "main" 
+                      "content1" "content2" "content3"
+                      "footer";
+ }
+}
+</style>
+<body>
+
+<div class="container">
+
+ <nav><h1 style="text-align:center; font-size:70px; margin-top:0px; margin-bottom:0px;">Welcome to Our Nouraniah Course</h1>
+<p style="text-align:center; font-size: 30px; margin-top:0px">We offer two unique packages to suit your learning preferences and goals.</p></nav>
+
+ <main><h2 style="text-align:center; ">One-on-One Session Package:</h2>
+<p style="font-size:20px; font-weight:normal;">Get personalized attention and guidance with our one-on-one session package. Work directly with our experienced native Arabic-speaking instructors to tailor the curriculum to your learning style and goals, including Nouraniah reading, Tajweed, and Qur'an memorization.</p>
+<p style="font-size:20px;"><b>Features:</b></p>
+<ul style="font-size:20px; font-weight:normal;"> 
+ <li>Customized Learning Plan.</li>
+ <li>Intensive Practice.</li>
+ <li>Progress Monitoring.</li>
+ <li>Individualized Feedback.</li>
+ <li>Additional Resources</li>
+</ul>
+<p style="font-weight:bold; font-size:30px;"> Price: $4 Per Session</p>
+
+<p style="text-align:right; margin-right:30px;"><a  href="http://wa.me/2348096813000"
+ target="_blank" 
+ style="text-decoration: none; color:black; font-size:20px;"><b> &rarr; Enroll Now </a></main>
+
+ <div id="sidebar"><h2 style="text-align:center;">Self-Teach Written Lessons Package:</h2>
+
+<p style="font-size:20px; font-weight:normal;">Dive into the world of Nouraniah at your own pace  with our self-teach written lessons package. Access comprehensive lesson  modules, interactive exercises, and progress tracking tools to enhance your  Arabic reading skills.</p>
+
+<p style="font-size:20px;"><b>Features:</b></p>
+
+<ul style="font-size:20px; font-weight:normal;">
+ 
+ <li>Structured written lessons covering Nouraniah rules    and pronunciation guidelines.</li>
+ <li class="tooltips"><a href="nouraniahmodulesindex.html" style="text-decoration:none; color: green;" title="Go to modules" target="_blank">Interactive      exercises for reinforcement and application of       concepts.</a> <span class="tooltipstext">Click the link to see the Modules &darr;</span></li>
+ <li>Self-assessment tools for progress tracking.</li>
+
+</ul>
+<p style="font-weight:bold; font-size:30px;"> Price: $50</p>
+<p style="text-align:right; margin-right:30px;"><a  href="http://wa.me/2348096813000"
+ target="_blank" 
+ style="text-decoration: none; color:black; font-size:20px;"><b> &rarr; Enroll Now </a></p></div>
+ 
+</div>
+
+</body>
+</html>
