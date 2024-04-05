@@ -27,6 +27,33 @@ body{background: linear-gradient(45deg, white, #D1E4C4, white);}
 }
 .tooltips:hover .tooltipstext{ visibility: visible;}
 
+ .dropdown{ display: flex; }
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+
 .container{
 
  display:grid;
@@ -72,8 +99,20 @@ footer{background: lightblue; grid-area: footer;}
                       "footer";
  }
 }
+
+
 </style>
 <body>
+
+<div class="dropdown">
+ <button>Contact Us</button>
+ <div class="content">
+  <a href="mailto: makaremalakhlaaq@gmail.com" target="_blank">Email</a>
+  <a href="https://wa.me/2348096813000" target="_blank">WhatsApp</a>
+  <a href="https://www.facebook.com/profile.php?id=100092246656320" target="_blank">Facebook</a>
+ </div>
+</div>
+
 
 <div class="container">
 
